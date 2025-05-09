@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "name": "New JSNB",
+    "language_info": {
+      "name": "JavaScipt",
+      "version": "8.0"
+    }
+  },
+  "jsnbversion": "v0.1",
+  "cells": [
+    {
+      "code": "<style>\n        #canvas{\n            border: 1px solid black;\n            display: block;\n            margin: 0 auto;\n            background: #fffacc;\n        }\n</style>\n<canvas id=\"canvas\" width=\"640\" height=\"480\"></canvas>\n",
+      "status": "",
+      "output": "<style>\n        #canvas{\n            border: 1px solid black;\n            display: block;\n            margin: 0 auto;\n            background: #fffacc;\n        }\n</style>\n<canvas id=\"canvas\" width=\"640\" height=\"480\"></canvas>\n",
+      "type": "html"
+    },
+    {
+      "code": "//store the canvas element in a variable\nconst canvas = document.getElementById('canvas');\n//define the rendering context \nconst ctx = canvas.getContext('2d');\n\n//a function that draws a circle and fills it with a color\nfunction drawBall(x, y, r){\n    ctx.beginPath();\n    ctx.arc(x, y, r, 0, 2*Math.PI);\n    ctx.strokeStyle = \"black\";\n    ctx.stroke();\n    ctx.fillStyle = \"red\";\n    ctx.fill();\n    ctx.closePath();\n}\n\n//calling the function twice\ndrawBall(100, 100, 20);\ndrawBall(200, 200, 30);\n",
+      "status": "[2]<br><span style=\"font-size:8px\">6ms<span></span></span>",
+      "output": "",
+      "type": "code"
+    },
+    {
+      "code": "",
+      "status": "",
+      "output": "",
+      "type": "code"
+    }
+  ],
+  "source": "https://github.com/gopi-suvanam/scribbler",
+  "run_on_load": false
+}
